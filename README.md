@@ -34,3 +34,65 @@ Move to the third element, compare it with the first two elements, and put it in
 Repeat until the entire array is sorted.
 
 ## Algorithms
+### Selection Sort
+1. Start.
+
+2. Input n (size of array).
+
+3. Input n elements into the array.
+
+4. For i = 0 to n-2:
+
+5. Set minIndex = i.
+
+6. For j = i+1 to n-1: If arr[j] < arr[minIndex], update minIndex = j.
+
+7. Swap arr[i] and arr[minIndex].
+
+8. Display the sorted array.
+
+9. End.
+### Insertion Sort
+1. Start.
+
+2. Input n (size of array).
+
+3. Input n elements into the array.
+
+4. For i = 1 to n-1:
+
+5. Set key = arr[i].
+
+6. Set j = i - 1.  While j >= 0 and arr[j] > key: Shift arr[j] to arr[j+1]. Decrement j.
+
+7. Place key at arr[j+1].
+
+8. Display the sorted array.
+
+9. End.
+### Bubble Sort
+Start.
+
+Input n (size of array).
+
+Input n elements into the array.
+
+For i = 0 to n-2:
+
+Set swapped = false.
+
+For j = 0 to n-i-2:
+
+If arr[j] > arr[j+1]:
+
+Swap arr[j] and arr[j+1].
+
+Set swapped = true.
+
+If swapped = false, break (array already sorted).
+
+Display the sorted array.
+
+End.
+## Conclusion
+We learnt to implememnt different sorting methods in C++.
